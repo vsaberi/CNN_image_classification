@@ -41,8 +41,8 @@ def normalize_data(Xtrain,Xtest,Xval):
 def pickle_data():
 
     #load data
-    train = loadmat('../../../large_training_data/train_32x32.mat')
-    test = loadmat('../../../large_training_data/test_32x32.mat')
+    train = loadmat('../large_training_data/train_32x32.mat')
+    test = loadmat('../large_training_data/test_32x32.mat')
 
     #extract data
     Xtrain = rearrange(train['X'])
